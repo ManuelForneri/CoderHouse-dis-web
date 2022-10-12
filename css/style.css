@@ -223,3 +223,16 @@ footer div a i {
 }
 
 /*fin catalogo productos*/
+
+/*  prueba */
+.container-grid {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas:
+    "middle header"
+    "middle main"
+    "middle footer";
+}
