@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  font-family: "Lato", sans-serif;
+}
+p {
+  font-family: "Lato", sans-serif;
+}
+span {
+  font-family: "Lato", sans-serif;
+}
+body {
+  background-color: #263f5b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #fcf6ef;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 3rem;
+}
+header img {
+  height: auto;
+  width: 12%;
+}
+
+header ul li a {
+  color: #000;
+  text-decoration: none;
+  transition: all 1s;
+  font-family: "Lato", sans-serif;
+  font-size: large;
+}
+header ul {
+  list-style: none;
+  display: flex;
+}
+header ul li {
+  margin-right: 30px;
+}
+
+header ul li a:hover {
+  color: #e6b052;
+  text-shadow: 1px 1px 2px #f2d5a4;
+}
+
+/*Derechos de autor y redes*/
+footer {
+  background-color: #fcf6ef;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  padding-right: 10px;
+  margin-top: auto;
+  height: auto;
+  padding: 10px;
+}
+footer div {
+  width: 25px;
+  height: auto;
+}
+footer div a i {
+  transition: all 0.5s;
+  font-size: x-large;
+  color: #a87925;
+}
+.hover-whatsapp:hover {
+  color: aquamarine;
+}
+.hover-instagram:hover {
+  color: deeppink;
+}
+.hover-facebook:hover {
+  color: steelblue;
+}
+
+/*Fin de derechos de autor y redes*/
+
+/* Contenedor de fotos */
+/*    text-shadow: 2px 4px 15px #000*/
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.container div img {
+  width: 480px;
+  height: auto;
+  box-shadow: 2px 4px 15px #000;
+}
+
+.description {
+  color: #fff;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  width: 67%;
+  margin: auto;
+  font-size: medium;
+}
+/*Fin contenedor fotos*/
+
+.title {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: xx-large;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Sobre nosotros */
+.container-about {
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+.container-about div {
+  display: flex;
+  gap: 20px;
+  background-color: #fcf6ef;
+  padding: 10px;
+  border-radius: 10px;
+}
+.container-about div div {
+  display: flex;
+  flex-direction: column;
+  color: #c28f38;
+}
+.imagenes {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+/*Fin sobre nosotros*/
+/*Formulario*/
+.formulario {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 60rem;
+  height: 60rem;
+  background-color: #fcf6ef;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.form-label {
+  font-family: "Lato", sans-serif;
+  color: #c28f38;
+}
+.form-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #c28f38;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: #000;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+.form-textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #c28f38;
+  margin-bottom: 2rem;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  resize: none;
+  font-size: 1.8rem;
+  width: 100%;
+  height: 15rem;
+}
+.btn-submit {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+}
+/*Fin formulario*/
+
+/*Catalogo de productos*/
+.container-product {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
+  color: #c28f38;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcf6ef;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  gap: 10px;
+}
+
+/*fin catalogo productos*/
