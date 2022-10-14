@@ -13,55 +13,84 @@ span {
   font-family: "Lato", sans-serif;
 }
 body {
-  background-color: #263f5b;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  background-image: url("/assets/interior-2.webp");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
-  background-color: #fcf6ef;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 10px;
-  margin-bottom: 3rem;
-}
-header img {
-  height: auto;
-  width: 12%;
 }
 
 header ul li a {
-  color: #000;
+  color: #fff;
+  opacity: 1;
   text-decoration: none;
-  transition: all 1s;
+  transition: all 0.3s;
   font-family: "Lato", sans-serif;
   font-size: large;
 }
 header ul {
   list-style: none;
   display: flex;
-}
-header ul li {
-  margin-right: 30px;
+  gap: 40px;
 }
 
 header ul li a:hover {
-  color: #e6b052;
-  text-shadow: 1px 1px 2px #f2d5a4;
+  color: #9a9a9a;
+  text-shadow: 1px 1px 2px #848484;
 }
+/*  grid */
+.container-grid {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas:
+    "middle header"
+    "middle main"
+    "middle footer";
+}
+
+.middle {
+  background-color: rgba(255, 255, 255, 0.5);
+  grid-area: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  grid-area: header;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.main {
+  grid-area: main;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  grid-area: footer;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* Fin grid */
+/* Imagenes */
 
 /*Derechos de autor y redes*/
 footer {
-  background-color: #fcf6ef;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: end;
   gap: 20px;
   padding-right: 10px;
-  margin-top: auto;
   height: auto;
   padding: 10px;
 }
@@ -72,7 +101,7 @@ footer div {
 footer div a i {
   transition: all 0.5s;
   font-size: x-large;
-  color: #a87925;
+  color: #ffffff;
 }
 .hover-whatsapp:hover {
   color: aquamarine;
@@ -223,16 +252,3 @@ footer div a i {
 }
 
 /*fin catalogo productos*/
-
-/*  prueba */
-.container-grid {
-  display: grid;
-  width: 100%;
-  height: 100vh;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 80% 10%;
-  grid-template-areas:
-    "middle header"
-    "middle main"
-    "middle footer";
-}
