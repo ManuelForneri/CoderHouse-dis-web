@@ -13,7 +13,8 @@ span {
   font-family: "Lato", sans-serif;
 }
 body {
-  background-image: url("/assets/interior-2.webp");
+  background-color: #293f61;
+  backdrop-filter: blur(2px);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,7 +29,7 @@ header {
 }
 
 header ul li a {
-  color: #fff;
+  color: #000;
   opacity: 1;
   text-decoration: none;
   transition: all 0.3s;
@@ -45,21 +46,26 @@ header ul li a:hover {
   color: #9a9a9a;
   text-shadow: 1px 1px 2px #848484;
 }
+.Logo {
+  width: 10%;
+  height: auto;
+}
 /*  grid */
 .container-grid {
   display: grid;
   width: 100%;
   height: 100vh;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 10% 80% 10%;
+  grid-template-rows: 10% 80% 80% 10%;
   grid-template-areas:
-    "middle header"
-    "middle main"
-    "middle footer";
+    "header header"
+    "middle middle"
+    "main main"
+    "footer footer";
 }
 
 .middle {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #293f61;
   grid-area: middle;
   display: flex;
   justify-content: center;
@@ -67,19 +73,20 @@ header ul li a:hover {
 }
 .header {
   grid-area: header;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #fff;
 }
 .main {
   grid-area: main;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #293f61;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 .footer {
   grid-area: footer;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #293f61;
 }
 /* Fin grid */
 /* Imagenes */
@@ -130,20 +137,23 @@ footer div a i {
 
 .description {
   color: #fff;
-  text-align: center;
   font-family: "Lato", sans-serif;
-  width: 67%;
-  margin: auto;
+  width: 80%;
   font-size: medium;
 }
 /*Fin contenedor fotos*/
 
 .title {
   color: #fff;
-  text-align: center;
-  padding-bottom: 20px;
   font-size: xx-large;
   font-family: "Montserrat", sans-serif;
+  width: 80%;
+}
+.titleCursive {
+  font-size: 100px;
+  font-family: "Cookie", cursive;
+  color: #fff;
+  text-shadow: 4px 4px 10px #000;
 }
 
 /* Sobre nosotros */
