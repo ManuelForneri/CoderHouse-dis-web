@@ -27,7 +27,6 @@ body {
 
 header {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
@@ -75,17 +74,17 @@ header ul li a::before {
   display: grid;
   width: 100%;
   height: 100vh;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   grid-template-rows: 70px 100vh 100vh 150px;
   grid-template-areas:
     "header header"
     "main main"
-    "middle middle"
+    "more more"
     "footer footer";
 }
 
-.middle {
-  grid-area: middle;
+.more {
+  grid-area: more;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,7 +143,7 @@ footer p {
 
 /* Contenedor de fotos */
 /*    text-shadow: 2px 4px 15px #000*/
-.container {
+.container-titles {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,7 +152,8 @@ footer p {
 .description {
   color: #fff;
   font-family: "Lato", sans-serif;
-  font-size: medium;
+  font-size: large;
+
   text-align: center;
 }
 /*Fin contenedor fotos*/
@@ -161,13 +161,13 @@ footer p {
 .subtitle {
   color: #fff;
   font-size: xx-large;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", serif;
   text-align: center;
   padding-bottom: 20px;
 }
 .titleCursive {
-  font-size: 100px;
-  font-family: "Cookie", cursive;
+  font-size: 80px;
+  font-family: "Merriweather", serif;
   text-align: center;
   color: #fff;
   text-shadow: 4px 4px 10px #000;
