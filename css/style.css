@@ -147,14 +147,25 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 65%;
 }
 
 .description {
   color: #fff;
   font-family: "Lato", sans-serif;
   font-size: large;
-
   text-align: center;
+  margin-bottom: 20px;
+}
+.button {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: x-large;
+  border: 2px solid #fff;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
 }
 /*Fin contenedor fotos*/
 
