@@ -75,7 +75,7 @@ header ul li a::before {
   width: 100%;
   height: 100vh;
   grid-template-columns: 100%;
-  grid-template-rows: 70px 100vh 100vh 150px;
+  grid-template-rows: 50px 100vh 100vh 150px;
   grid-template-areas:
     "header header"
     "main main"
@@ -147,6 +147,7 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 65%;
 }
 
@@ -155,19 +156,48 @@ footer p {
   font-family: "Lato", sans-serif;
   font-size: large;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
-.button {
-  text-decoration: none;
-  color: #fff;
-  font-family: "Lato", sans-serif;
-  font-size: x-large;
-  border: 2px solid #fff;
-  width: 100px;
+
+/* Boton */
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #b7ac92;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
   text-align: center;
-  padding: 5px;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: "Lato", sans-serif;
+
+  color: #b7ac92;
 }
-/*Fin contenedor fotos*/
+
+button::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #b7ac92;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+button:hover::before {
+  width: 105%;
+}
+
+button:hover {
+  color: #111;
+  cursor: pointer;
+}
 
 .subtitle {
   color: #fff;
@@ -182,6 +212,7 @@ footer p {
   text-align: center;
   color: #fff;
   text-shadow: 4px 4px 10px #000;
+  letter-spacing: 3px;
 }
 
 /* Sobre nosotros */
