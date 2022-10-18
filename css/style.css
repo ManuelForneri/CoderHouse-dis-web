@@ -3,15 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-h2 {
-  font-family: "Lato", sans-serif;
-}
-p {
-  font-family: "Lato", sans-serif;
-}
-span {
-  font-family: "Lato", sans-serif;
-}
+
 body {
   background-image: linear-gradient(
       115deg,
@@ -24,6 +16,35 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+h2 {
+  font-family: "Lato", sans-serif;
+}
+p {
+  font-family: "Lato", sans-serif;
+}
+/* Titles */
+.titles {
+  font-size: 50px;
+  color: #b7ac92;
+  text-align: center;
+  text-shadow: 0 0 3px #fff;
+}
+.subtitle {
+  color: #fff;
+  font-size: xx-large;
+  font-family: "Montserrat", serif;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.titleCursive {
+  font-size: 80px;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  color: #fff;
+  text-shadow: 4px 4px 10px #000;
+  letter-spacing: 3px;
+}
+/* Fin titles */
 
 header {
   display: flex;
@@ -69,7 +90,7 @@ header ul li a::before {
   height: auto;
   margin-right: 20px;
 }
-/*  grid */
+/*  grid  */
 .container-grid {
   display: grid;
   width: 100%;
@@ -105,7 +126,7 @@ header ul li a::before {
   grid-area: footer;
   background-color: #b7ac92;
 }
-/* Fin grid */
+/* Fin grid  */
 
 /*Derechos de autor y redes*/
 footer {
@@ -206,21 +227,21 @@ footer p {
 }
 
 .box:hover:before {
-  border-color: #262626;
+  border-color: #b7ac92;
   height: 100%;
   transform: translateX(0);
   transition: 0.3s transform linear, 0.3s height linear 0.3s;
 }
 
 .box:hover:after {
-  border-color: #262626;
+  border-color: #b7ac92;
   height: 100%;
   transform: translateX(0);
   transition: 0.3s transform linear, 0.3s height linear 0.5s;
 }
 
 button {
-  color: black;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
   outline: none;
@@ -229,48 +250,37 @@ button {
 }
 /*fin boton*/
 
-.subtitle {
-  color: #fff;
-  font-size: xx-large;
-  font-family: "Montserrat", serif;
-  text-align: center;
-  padding-bottom: 20px;
-}
-.titleCursive {
-  font-size: 80px;
-  font-family: "Merriweather", serif;
-  text-align: center;
-  color: #fff;
-  text-shadow: 4px 4px 10px #000;
-  letter-spacing: 3px;
-}
-
 /* Sobre nosotros */
 .container-about {
-  max-width: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  margin: 0 auto;
-  padding-bottom: 20px;
 }
 .container-about div {
   display: flex;
-  gap: 20px;
   background-color: #fcf6ef;
-  padding: 10px;
-  border-radius: 10px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .container-about div div {
   display: flex;
   flex-direction: column;
   color: #c28f38;
+  width: 50%;
+}
+.description-about {
+  padding: 10px;
+  color: #25221b;
+  font-size: medium;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  width: 80%;
 }
 .imagenes {
   object-fit: cover;
-  width: 300px;
-  height: 300px;
-  border-radius: 10px;
+  width: 500px;
 }
 /*Fin sobre nosotros*/
 /*Formulario*/
