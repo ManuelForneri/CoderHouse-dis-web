@@ -106,7 +106,6 @@ header ul li a::before {
   background-color: #b7ac92;
 }
 /* Fin grid */
-/* Imagenes */
 
 /*Derechos de autor y redes*/
 footer {
@@ -198,6 +197,7 @@ button:hover {
   color: #111;
   cursor: pointer;
 }
+/*fin boton*/
 
 .subtitle {
   color: #fff;
