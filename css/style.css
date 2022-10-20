@@ -520,7 +520,11 @@ button:hover {
     flex-direction: column-reverse;
   }
   .container-about-more div h2 {
-    font-size: 5vw;
+    font-size: 10vw;
+    text-align: center;
+  }
+  .news h2 {
+    font-size: 10vw;
     text-align: center;
   }
   .middle {
