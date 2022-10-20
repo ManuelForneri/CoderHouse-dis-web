@@ -90,6 +90,10 @@ header ul li a::before {
   transition: 0.5s;
   opacity: 0;
 }
+.btn-hamburguer {
+  color: #000;
+  display: none;
+}
 /* Fin header */
 /* Logo */
 .container-logo {
@@ -544,7 +548,45 @@ button:hover {
   .container-about div {
     flex-direction: column;
   }
-
+  /*header*/
+  header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b7ac92;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    transition: max-height 0.3s ease;
+    width: 100%;
+    transition: all 0.9s;
+    padding-bottom: 15px;
+  }
+  header ul li {
+    opacity: 0;
+    transition: all 2s;
+  }
+  .btn-hamburguer {
+    display: flex;
+    margin-right: 1em;
+    background-color: transparent;
+    border: none;
+    font-size: 4vw;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-weight: bold;
+  }
+  .open-ul {
+    margin-top: 180px;
+    max-height: 300px;
+  }
+  .open-ul li {
+    opacity: 1;
+  }
+  /*fin header*/
   /* fin index */
 }
 /* fin de modo responsive para tablet */

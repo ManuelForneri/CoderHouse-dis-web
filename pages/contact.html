@@ -31,8 +31,8 @@
   </head>
   <body>
     <header class="header">
-      <img src="../assets/LogoTessore.png" alt="" class="logo" />
-      <ul>
+      <input type="button" value="☰" id="hamburger" class="btn-hamburguer" />
+      <ul id="list">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="about.html">Sobre Nosotros</a></li>
         <li><a href="product.html">Productos</a></li>
@@ -93,7 +93,23 @@
       crossorigin="anonymous"
     ></script>
     <!-- fin iconos -->
+    <script>
+      var btn = document.getElementById("hamburger"),
+        list = document.getElementById("list"),
+        contador = 0;
 
+      btn.addEventListener("click", Cambio, "true");
+
+      function Cambio() {
+        if (contador == 0) {
+          list.classList.add("open-ul");
+          contador = 1;
+        } else {
+          list.classList.remove("open-ul");
+          contador = 0;
+        }
+      }
+    </script>
     <!-- fin Scripts -->
   </body>
 </html>

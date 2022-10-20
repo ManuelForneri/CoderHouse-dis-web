@@ -29,14 +29,14 @@
     <!--Fin importaciones fuentes-->
   </head>
   <body>
-    <header>
-      <img src="../assets/LogoTessore.png" alt="" class="logo" />
-      <ul>
+    <header class="header">
+      <input type="button" value="☰" id="hamburger" class="btn-hamburguer" />
+      <ul id="list">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="about.html">Sobre Nosotros</a></li>
         <li><a href="product.html" class="activo">Productos</a></li>
         <li><a href="services.html">Servicios</a></li>
-        <li><a href="contact.html">Contactos</a></li>
+        <li><a href="contact.html" >Contactos</a></li>
       </ul>
     </header>
     <main>
@@ -124,7 +124,23 @@
     crossorigin="anonymous"
   ></script>
   <!-- fin iconos -->
+  <script>
+    var btn = document.getElementById("hamburger"),
+      list = document.getElementById("list"),
+      contador = 0;
 
+    btn.addEventListener("click", Cambio, "true");
+
+    function Cambio() {
+      if (contador == 0) {
+        list.classList.add("open-ul");
+        contador = 1;
+      } else {
+        list.classList.remove("open-ul");
+        contador = 0;
+      }
+    }
+  </script>
   <!-- fin Scripts -->
   </body>
 </html>
