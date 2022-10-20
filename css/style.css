@@ -492,7 +492,6 @@ button:hover {
 /*fin catalogo productos*/
 /* Inicio de responsive para tablet */
 @media (max-width: 768px) {
-  /* index */
   header ul li a {
     font-size: small;
   }
@@ -587,7 +586,9 @@ button:hover {
     opacity: 1;
   }
   /*fin header*/
-  /* fin index */
+  .redes-container {
+    gap: 40px;
+  }
 }
 /* fin de modo responsive para tablet */
 /* inicio modo responsive mobile */
@@ -598,6 +599,9 @@ button:hover {
   }
   .imagenes {
     height: auto;
+  }
+  footer p {
+    font-size: small;
   }
 }
 /* fin modo responsive mobile */
