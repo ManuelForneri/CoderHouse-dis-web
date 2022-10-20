@@ -474,8 +474,8 @@ button:hover {
 .product-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   background-color: #fcf6ef;
+  width: 100%;
   padding: 20px;
   border-radius: 10px;
   gap: 10px;
@@ -498,12 +498,18 @@ button:hover {
   .titleCursive {
     font-size: 7vw;
   }
+  .titles {
+    font-size: 7vw;
+  }
   .subtitle {
     font-size: 5vw;
   }
   .description {
     font-size: medium;
     padding: 3vh;
+  }
+  .description-about {
+    font-size: small;
   }
   .container-titles {
     width: 100%;
