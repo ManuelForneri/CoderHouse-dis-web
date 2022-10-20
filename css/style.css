@@ -541,7 +541,6 @@ button:hover {
     grid-template-columns: repeat(1, 1fr);
   }
   .product-card {
-    width: 100vw;
     height: 90vh;
   }
   .container-about div {
