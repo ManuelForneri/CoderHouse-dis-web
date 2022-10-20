@@ -75,10 +75,11 @@ header ul {
   gap: 40px;
   margin-right: 20px;
 }
-
+header ul li a.activo::before,
 header ul li a:hover::before {
   opacity: 1;
 }
+
 header ul li a::before {
   content: "";
   border-bottom: 2px solid #fff;
@@ -86,7 +87,7 @@ header ul li a::before {
   bottom: -5px;
   width: 100%;
   left: 0;
-  transition: 0.3s;
+  transition: 0.5s;
   opacity: 0;
 }
 /* Fin header */
@@ -116,15 +117,14 @@ header ul li a::before {
 .container-about-more {
   background-color: #b7ac92;
   width: 100%;
+  height: 100vh;
   margin: 20px auto;
-
   padding: 10px;
   display: flex;
 }
 .container-about-more div {
-  width: 70%;
   padding: 20px;
-  font-size: large;
+  font-size: x-large;
   color: #fff;
   font-family: "Lato", sans-serif;
 }
@@ -135,9 +135,10 @@ header ul li a::before {
 .container-about-more div a {
   color: #fff;
 }
-.container-about-more img {
-  width: 30%;
-  border-radius: 5px;
+.middle {
+  width: 50%;
+  justify-content: center;
+  align-self: center;
 }
 /* fin about-more */
 /*Novedades*/
@@ -160,6 +161,10 @@ header ul li a::before {
   gap: 20px;
   margin-bottom: 20px;
   justify-content: space-between;
+}
+.container-button-product {
+  display: flex;
+  justify-content: center;
 }
 /*Fin novedades*/
 /* /*  grid index  
@@ -287,6 +292,44 @@ button:hover {
 
 /*fin boton*/
 
+/* Boton productos */
+.button-product {
+  padding: 0.8em 1.8em;
+  border: 2px solid #b7ac92;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: "Lato", sans-serif;
+  color: #ffffff;
+}
+.button-product::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #fff;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.button-product:hover::before {
+  width: 105%;
+}
+
+.button-product:hover {
+  color: #111;
+}
+/* fin boton productos */
+
 /* Sobre nosotros */
 .container-about {
   height: 100%;
@@ -399,8 +442,15 @@ button:hover {
   margin: 0 auto;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  color: #fff;
+  color: #c28f38;
   font-size: 1.5em;
+  transition: all 0.5s;
+}
+.btn-submit:hover {
+  background-color: #b7ac92;
+  color: #fff;
+  border-radius: 2px;
+  width: 15%;
 }
 /*Fin formulario*/
 
@@ -436,3 +486,63 @@ button:hover {
 }
 
 /*fin catalogo productos*/
+@media (max-width: 768px) {
+  input[type="checkbox"] {
+    appearance: none;
+    display: none;
+    visibility: hidden;
+  }
+
+  .bar {
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+  }
+
+  .bar span {
+    position: absolute;
+    width: 45px;
+    height: 7px;
+    background: #f1faee;
+    border-radius: 100px;
+    display: inline-block;
+    transition: 0.3s ease;
+    left: 0;
+  }
+
+  .bar span.top {
+    top: 0;
+  }
+
+  .bar span.middle {
+    top: 17px;
+  }
+
+  .bar span.bottom {
+    bottom: 0;
+  }
+
+  input[type]:checked ~ span.top {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 48px;
+    left: 5px;
+  }
+
+  input[type]:checked ~ span.bottom {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    width: 48px;
+    bottom: -1px;
+    box-shadow: 0 0 10px #495057;
+  }
+
+  input[type]:checked ~ span.middle {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  .bar:checked + .menu {
+    background-color: #000;
+  }
+}
