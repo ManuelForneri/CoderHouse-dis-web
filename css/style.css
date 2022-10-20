@@ -13,7 +13,7 @@ body {
       rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
-    url(/assets/fondoreloj.webp);
+    url(../assets/fondoreloj.webp);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
