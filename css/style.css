@@ -534,8 +534,10 @@ button:hover {
     width: 100%;
     height: 50%;
   }
+
   .container-about-more div p {
     font-size: large;
+    text-align: center;
   }
   .container-grid-products {
     grid-template-columns: repeat(1, 1fr);
