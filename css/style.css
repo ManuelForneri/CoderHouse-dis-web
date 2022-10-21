@@ -542,6 +542,7 @@ button:hover {
   }
   .product-card {
     height: 90vh;
+    width: 100%;
   }
   .container-about div {
     flex-direction: column;
