@@ -1,11 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-}
+/*minuto 48:20*/
 
 body {
   background-image: linear-gradient(
@@ -51,49 +44,7 @@ p {
   letter-spacing: 3px;
 }
 /* Fin titles */
-/* header */
-header {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  background-color: #b7ac92;
-  height: 50px;
-}
 
-header ul li a {
-  color: #fff;
-  opacity: 1;
-  text-decoration: none;
-  transition: all 0.3s;
-  font-family: "Lato", sans-serif;
-  font-size: x-large;
-  position: relative;
-}
-header ul {
-  list-style: none;
-  display: flex;
-  gap: 40px;
-  margin-right: 20px;
-}
-header ul li a.activo::before,
-header ul li a:hover::before {
-  opacity: 1;
-}
-
-header ul li a::before {
-  content: "";
-  border-bottom: 2px solid #fff;
-  position: absolute;
-  bottom: -5px;
-  width: 100%;
-  left: 0;
-  transition: 0.5s;
-  opacity: 0;
-}
-.btn-hamburguer {
-  color: #000;
-  display: none;
-}
 /* Fin header */
 /* Logo */
 .container-logo {
@@ -255,84 +206,6 @@ footer p {
   text-align: center;
   margin-bottom: 50px;
 }
-
-/* Boton */
-button {
-  padding: 0.8em 1.8em;
-  border: 2px solid #b7ac92;
-  position: relative;
-  overflow: hidden;
-  background-color: transparent;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 16px;
-  transition: 0.3s;
-  z-index: 1;
-  font-family: "Lato", sans-serif;
-  color: #b7ac92;
-}
-
-button::before {
-  content: "";
-  width: 0;
-  height: 300%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  background: #b7ac92;
-  transition: 0.5s ease;
-  display: block;
-  z-index: -1;
-}
-
-button:hover::before {
-  width: 105%;
-}
-
-button:hover {
-  color: #111;
-}
-
-/*fin boton*/
-
-/* Boton productos */
-.button-product {
-  padding: 0.8em 1.8em;
-  border: 2px solid #b7ac92;
-  position: relative;
-  overflow: hidden;
-  background-color: transparent;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 16px;
-  transition: 0.3s;
-  z-index: 1;
-  font-family: "Lato", sans-serif;
-  color: #ffffff;
-}
-.button-product::before {
-  content: "";
-  width: 0;
-  height: 300%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  background: #fff;
-  transition: 0.5s ease;
-  display: block;
-  z-index: -1;
-}
-
-.button-product:hover::before {
-  width: 105%;
-}
-
-.button-product:hover {
-  color: #111;
-}
-/* fin boton productos */
 
 /* Sobre nosotros */
 .container-about {

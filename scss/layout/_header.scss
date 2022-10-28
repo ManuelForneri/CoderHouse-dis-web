@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: $background-principal;
+  height: 50px;
+
+  ul {
+    li a {
+      color: #fff;
+      opacity: 1;
+      text-decoration: none;
+      transition: all 0.3s;
+      font-family: "Lato", sans-serif;
+      font-size: x-large;
+      position: relative;
+
+      &.activo::before,
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &::before {
+        content: "";
+        border-bottom: 2px solid #fff;
+        position: absolute;
+        bottom: -5px;
+        width: 100%;
+        left: 0;
+        transition: 0.5s;
+        opacity: 0;
+      }
+    }
+
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 20px;
+  }
+}
+
+.btn-hamburguer {
+  color: #000;
+  display: none;
+}
