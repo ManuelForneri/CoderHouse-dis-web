@@ -485,4 +485,7 @@ button {
   .imagenes {
     height: auto; }
   footer p {
-    font-size: small; } }
+    font-size: small; }
+  .container-services div div h2 {
+    text-align: center;
+    font-size: x-large; } }
