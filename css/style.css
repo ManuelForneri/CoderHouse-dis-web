@@ -14,7 +14,7 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; }
+  min-height: 110vh; }
 
 h2 {
   font-family: "Lato", sans-serif; }
