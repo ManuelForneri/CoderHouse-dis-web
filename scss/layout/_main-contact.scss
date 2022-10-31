@@ -1,0 +1,66 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 60rem;
+  height: 60rem;
+  background-color: #fcf6ef;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-family: "Lato", sans-serif;
+  color: #c28f38;
+}
+
+.form-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #c28f38;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: #000;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #c28f38;
+  margin-bottom: 2rem;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  resize: none;
+  font-size: 1.8rem;
+  width: 100%;
+  height: 15rem;
+}
+
+.btn-submit {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #c28f38;
+  font-size: 1.5em;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: #b7ac92;
+    color: #fff;
+    border-radius: 2px;
+    width: 15%;
+  }
+}

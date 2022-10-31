@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background-image: linear-gradient(115deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/fondoreloj.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+h2 {
+  font-family: "Lato", sans-serif; }
+
+p {
+  font-family: "Lato", sans-serif; }
+
+header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: #b7ac92;
+  height: 50px; }
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 20px; }
+    header ul li a {
+      color: #fff;
+      opacity: 1;
+      text-decoration: none;
+      transition: all 0.3s;
+      font-family: "Lato", sans-serif;
+      font-size: x-large;
+      position: relative; }
+      header ul li a.activo::before, header ul li a:hover::before {
+        opacity: 1; }
+      header ul li a::before {
+        content: "";
+        border-bottom: 2px solid #fff;
+        position: absolute;
+        bottom: -5px;
+        width: 100%;
+        left: 0;
+        transition: 0.5s;
+        opacity: 0; }
+
+.btn-hamburguer {
+  color: #000;
+  display: none; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px; }
+
+.container-about-more {
+  background-color: #b7ac92;
+  width: 100%;
+  height: 100vh;
+  margin: 20px auto;
+  display: flex; }
+  .container-about-more div {
+    padding: 20px;
+    font-size: x-large;
+    color: #fff;
+    font-family: "Lato", sans-serif; }
+    .container-about-more div h2 {
+      font-size: 50px;
+      margin-bottom: 30px; }
+    .container-about-more div a {
+      color: #fff; }
+
+.middle {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.news {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #b7ac92;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px; }
+  .news h2 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center; }
+
+.products-news {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: space-between; }
+
+.container-button-product {
+  display: flex;
+  justify-content: center; }
+
+.container-about {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; }
+  .container-about div {
+    display: flex;
+    background-color: #fcf6ef;
+    height: 100%;
+    justify-content: center;
+    align-items: center; }
+    .container-about div div {
+      display: flex;
+      flex-direction: column;
+      color: #c28f38;
+      width: 100%; }
+
+.description-about {
+  padding: 10px;
+  color: #25221b;
+  font-size: medium;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+  width: 80%; }
+
+.imagenes {
+  object-fit: cover;
+  width: 100%;
+  height: 70%; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 60rem;
+  height: 60rem;
+  background-color: #fcf6ef;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 1rem; }
+
+.form-label {
+  font-family: "Lato", sans-serif;
+  color: #c28f38; }
+
+.form-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #c28f38;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: #000;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif; }
+
+.form-textarea {
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #c28f38;
+  margin-bottom: 2rem;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  resize: none;
+  font-size: 1.8rem;
+  width: 100%;
+  height: 15rem; }
+
+.btn-submit {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #c28f38;
+  font-size: 1.5em;
+  transition: all 0.5s; }
+  .btn-submit:hover {
+    background-color: #b7ac92;
+    color: #fff;
+    border-radius: 2px;
+    width: 15%; }
+
+.container-grid-products {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  gap: 20px;
+  margin: 20px 0px;
+  grid-template-columns: repeat(4, 1fr); }
+
+.container-product {
+  display: flex;
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-around; }
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fcf6ef;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 10px; }
+
+.title-product {
+  font-size: large;
+  font-weight: bold; }
+
+.container-services {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px; }
+  .container-services div {
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    background-color: #fcf6ef;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto; }
+    .container-services div div {
+      display: flex;
+      flex-direction: column;
+      color: #000;
+      width: 100%; }
+
+.imagenes-servicios {
+  width: 300px; }
+
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: auto;
+  background-color: #b7ac92;
+  padding: 20px;
+  margin-top: auto; }
+  footer p {
+    color: #fff; }
+
+.hover-whatsapp:hover {
+  color: aquamarine; }
+
+.hover-instagram:hover {
+  color: deeppink; }
+
+.hover-facebook:hover {
+  color: steelblue; }
+
+.redes {
+  transition: all 0.5s;
+  font-size: x-large;
+  color: #ffffff; }
+
+.redes-container {
+  display: flex;
+  gap: 20px; }
+
+button {
+  padding: 0.8em 1.8em;
+  border: 2px solid #b7ac92;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: "Lato", sans-serif;
+  color: #b7ac92; }
+  button::before {
+    content: "";
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #b7ac92;
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1; }
+  button:hover {
+    color: #111; }
+    button:hover::before {
+      width: 105%; }
+
+/* Boton productos */
+.button-product {
+  padding: 0.8em 1.8em;
+  border: 2px solid #b7ac92;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: "Lato", sans-serif;
+  color: #ffffff; }
+  .button-product::before {
+    content: "";
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #fff;
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1; }
+  .button-product:hover {
+    color: #111; }
+    .button-product:hover::before {
+      width: 105%; }
+
+/* fin boton productos */
+.container-logo {
+  width: 100%;
+  display: flex;
+  justify-content: end; }
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 20px; }
+
+.container-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 75vh; }
+
+.titles {
+  font-size: 50px;
+  color: #b7ac92;
+  text-align: center;
+  text-shadow: 0 0 3px #fff; }
+
+.subtitle {
+  color: #fff;
+  font-size: xx-large;
+  font-family: "Montserrat", serif;
+  text-align: center;
+  padding-bottom: 20px; }
+
+.titleCursive {
+  font-size: 80px;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  color: #fff;
+  text-shadow: 4px 4px 10px #000;
+  letter-spacing: 3px; }
+
+.description {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: large;
+  text-align: center;
+  margin-bottom: 50px; }

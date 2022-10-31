@@ -1,0 +1,28 @@
+.container-services {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px;
+
+  div {
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    background-color: #fcf6ef;
+    height: 100%;
+    padding: 20px;
+    margin: 0 auto;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      color: #000;
+      width: 100%;
+    }
+  }
+}
+
+.imagenes-servicios {
+  width: 300px;
+}

@@ -1,0 +1,120 @@
+@media (max-width: 768px) {
+  header ul {
+    li a {
+      font-size: small;
+    }
+
+    gap: 20px;
+  }
+
+  .titleCursive,
+  .titles {
+    font-size: 7vw;
+  }
+
+  .subtitle {
+    font-size: 5vw;
+  }
+
+  .description {
+    font-size: 4vw;
+    padding: 3vh;
+  }
+
+  .description-about {
+    font-size: small;
+  }
+
+  .container-titles {
+    width: 100%;
+  }
+
+  .container-about-more {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+
+    div h2 {
+      font-size: 10vw;
+      text-align: center;
+    }
+  }
+
+  .news h2 {
+    font-size: 10vw;
+    text-align: center;
+  }
+
+  .middle {
+    width: 100%;
+    height: 50%;
+  }
+
+  .container-about-more div p {
+    font-size: large;
+    text-align: center;
+  }
+
+  .container-grid-products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product-card {
+    height: 90vh;
+    width: 100%;
+  }
+
+  .container-about div {
+    flex-direction: column;
+  }
+
+  /*header*/
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b7ac92;
+    margin: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    transition: max-height 0.3s ease;
+    width: 100%;
+    transition: all 0.9s;
+    padding-bottom: 15px;
+
+    li {
+      opacity: 0;
+      transition: all 2s;
+    }
+  }
+
+  .btn-hamburguer {
+    display: flex;
+    margin-right: 1em;
+    background-color: transparent;
+    border: none;
+    font-size: 4vw;
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .open-ul {
+    margin-top: 180px;
+    max-height: 300px;
+
+    li {
+      opacity: 1;
+    }
+  }
+
+  /*fin header*/
+
+  .redes-container {
+    gap: 40px;
+  }
+}
