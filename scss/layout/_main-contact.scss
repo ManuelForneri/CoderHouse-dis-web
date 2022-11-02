@@ -1,9 +1,12 @@
+.container-form {
+  width: 100%;
+}
 .formulario {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 60rem;
+  width: 80%;
   height: 60rem;
   background-color: #fcf6ef;
   padding: 20px;
@@ -61,6 +64,6 @@
     background-color: #b7ac92;
     color: #fff;
     border-radius: 2px;
-    width: 15%;
+    width: 50%;
   }
 }
