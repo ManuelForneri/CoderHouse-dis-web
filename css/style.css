@@ -38,7 +38,7 @@ header {
       opacity: 1;
       text-decoration: none;
       font-family: "Lato", sans-serif;
-      font-size: x-large;
+      font-size: larger;
       position: relative; }
       header ul li a.activo::before, header ul li a:hover::before {
         opacity: 1; }
@@ -51,6 +51,8 @@ header {
         left: 0;
         transition: 0.5s;
         opacity: 0; }
+      header ul li a:hover {
+        color: #fff; }
 
 .btn-hamburguer {
   color: #000;
@@ -167,7 +169,6 @@ header {
   border-bottom: 0.1rem solid #c28f38;
   width: 100%;
   margin-bottom: 2rem;
-  color: #000;
   font-size: 1.8rem;
   font-family: "Montserrat", sans-serif; }
 
@@ -177,7 +178,6 @@ header {
   outline: none;
   border-bottom: 0.1rem solid #c28f38;
   margin-bottom: 2rem;
-  color: #000;
   font-family: "Montserrat", sans-serif;
   resize: none;
   font-size: 1.8rem;

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>El Abuelo Tessore</title>
-    <link rel="icon" href="../assets/Logos/logo_large.png" />
+    <title>Productos | El Abuelo Tessore</title>
+    <link rel="icon" href="../assets/Logos/logo_small.webp" />
     <!--Importaciones Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,69 +36,58 @@
         <li><a href="about.html">Sobre Nosotros</a></li>
         <li><a href="product.html" class="activo">Productos</a></li>
         <li><a href="services.html">Servicios</a></li>
-        <li><a href="contact.html" >Contactos</a></li>
+        <li><a href="contact.html">Contactos</a></li>
       </ul>
     </header>
     <main>
       <h1 class="titles">Productos</h1>
       <section class="container-grid-products">
         <div class="product-card">
-          <img src="../assets/Anillo-calado.png" alt="" class="imagenes" />
+          <img src="../assets/Anillo-calado.webp" alt="" class="imagenes" />
           <p class="title-product">Anillo Calado</p>
-          
         </div>
         <div class="product-card">
           <img
-            src="../assets/Cinto-personalizado.png"
+            src="../assets/Cinto-personalizado.webp"
             alt=""
             class="imagenes"
           />
           <p class="title-product">Cinto personalizado</p>
-          
-          
         </div>
         <div class="product-card">
-          <img src="../assets/Encendedor-zippo.png" alt="" class="imagenes" />
+          <img src="../assets/Encendedor-zippo.webp" alt="" class="imagenes" />
           <p class="title-product">Encendedor zippo</p>
-          
         </div>
         <div class="product-card">
-          <img src="../assets/CitizenFondoNegro.png" alt="" class="imagenes" />
+          <img src="../assets/CitizenFondoNegro.webp" alt="" class="imagenes" />
           <p class="title-product">Reloj Citizen</p>
-          
         </div>
         <div class="product-card">
-          <img src="../assets/mochilaCueroAzul.jpg" alt="" class="imagenes" />
+          <img src="../assets/mochilaCueroAzul.webp" alt="" class="imagenes" />
           <p class="title-product">Mochilita de cuero azul</p>
-          
         </div>
         <div class="product-card">
-          <img src="../assets/EcoDrive.jpg" alt="" class="imagenes" />
-          <p class="title-product">Reloj Citizen de acero con maquina ECO DRIVE</p>
-          
+          <img src="../assets/EcoDrive.webp" alt="" class="imagenes" />
+          <p class="title-product">
+            Reloj Citizen de acero con maquina ECO DRIVE
+          </p>
         </div>
         <div class="product-card">
-          <img src="../assets/MateMadera.jpg" alt="" class="imagenes" />
+          <img src="../assets/MateMadera.webp" alt="" class="imagenes" />
           <p class="title-product">Mates imperiales</p>
-          
         </div>
-        
+
         <div class="product-card">
-          <img src="../assets/joyeria.jpg" alt="" class="imagenes" />
+          <img src="../assets/joyeria.webp" alt="" class="imagenes" />
           <p class="title-product">Corbatero plata y swarovski</p>
-          
         </div>
-        
       </section>
-      
     </main>
     <footer class="footer">
       <p>Designed & Developed by Manuel Forneri - 2022</p>
       <div class="redes-container">
         <div>
-          <a
-            target="_blank"
-            href="https://www.facebook.com/elabuelo.tessore.14"
+          <a target="_blank" href="https://www.facebook.com/elabuelo.tessore.14"
             ><i class="fa-brands fa-facebook-f hover-facebook redes"></i
           ></a>
         </div>
@@ -115,32 +104,31 @@
       </div>
       <p>Siguenos en nuestras redes</p>
     </footer>
-  </div>
 
-  <!-- Scripts -->
-  <!-- iconos -->
-  <script
-    src="https://kit.fontawesome.com/e560b8c1fe.js"
-    crossorigin="anonymous"
-  ></script>
-  <!-- fin iconos -->
-  <script>
-    var btn = document.getElementById("hamburger"),
-      list = document.getElementById("list"),
-      contador = 0;
-
-    btn.addEventListener("click", Cambio, "true");
-
-    function Cambio() {
-      if (contador == 0) {
-        list.classList.add("open-ul");
-        contador = 1;
-      } else {
-        list.classList.remove("open-ul");
+    <!-- Scripts -->
+    <!-- iconos -->
+    <script
+      src="https://kit.fontawesome.com/e560b8c1fe.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fin iconos -->
+    <script>
+      var btn = document.getElementById("hamburger"),
+        list = document.getElementById("list"),
         contador = 0;
+
+      btn.addEventListener("click", Cambio, "true");
+
+      function Cambio() {
+        if (contador == 0) {
+          list.classList.add("open-ul");
+          contador = 1;
+        } else {
+          list.classList.remove("open-ul");
+          contador = 0;
+        }
       }
-    }
-  </script>
-  <!-- fin Scripts -->
+    </script>
+    <!-- fin Scripts -->
   </body>
 </html>
