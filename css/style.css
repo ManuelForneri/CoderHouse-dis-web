@@ -38,7 +38,7 @@ header {
       opacity: 1;
       text-decoration: none;
       font-family: "Lato", sans-serif;
-      font-size: larger;
+      font-size: x-large;
       position: relative; }
       header ul li a.activo::before, header ul li a:hover::before {
         opacity: 1; }
@@ -147,16 +147,11 @@ header {
   width: 100%; }
 
 .formulario {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   margin: 0 auto;
   width: 80%;
   height: 60rem;
   background-color: #fcf6ef;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 1rem; }
+  border-radius: 10px; }
 
 .form-label {
   font-family: "Lato", sans-serif;
