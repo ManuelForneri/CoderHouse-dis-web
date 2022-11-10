@@ -7,7 +7,6 @@
   div {
     @include props-flex(row, center, center);
     background-color: #fcf6ef;
-    height: 100vh;
 
     div {
       display: flex;
