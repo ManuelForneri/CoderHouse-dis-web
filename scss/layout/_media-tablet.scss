@@ -5,6 +5,7 @@
     }
 
     gap: 20px;
+    z-index: 1;
   }
 
   .titleCursive,
@@ -27,7 +28,6 @@
 
   .container-titles {
     width: 100%;
-    z-index: -1;
   }
 
   .container-about-more {
@@ -102,6 +102,7 @@
     z-index: 1;
     color: #fff;
     font-weight: bold;
+    z-index: 2;
   }
 
   .open-ul {
