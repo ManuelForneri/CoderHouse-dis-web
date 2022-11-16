@@ -164,8 +164,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
-  min-height: 110vh; }
+  flex-direction: column; }
 
 h2 {
   font-family: "Lato", sans-serif; }
