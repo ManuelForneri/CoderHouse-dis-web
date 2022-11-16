@@ -576,7 +576,8 @@ button {
   .description-about {
     font-size: small; }
   .container-titles {
-    width: 100%; }
+    width: 100%;
+    z-index: -1; }
   .container-about-more {
     width: 100%;
     height: auto;
