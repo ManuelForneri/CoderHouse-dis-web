@@ -73,3 +73,27 @@ button {
   }
 }
 /* fin boton productos */
+/* boton compra */
+.btn-compra {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #c28f38;
+  font-size: 1em;
+  transition: all 0.5s;
+
+  &:hover {
+    background-color: #b7ac92;
+    color: #fff;
+    border-radius: 2px;
+    width: 50%;
+  }
+}
+/* fin boton compra */
